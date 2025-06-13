@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from .models import Condominio
+from rest_framework import viewsets
+from .serializer import CondominioSerializer
 
-# Create your views here.
