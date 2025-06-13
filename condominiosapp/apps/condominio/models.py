@@ -7,3 +7,11 @@ class Condominio(models.Model):
     endereco = models.TextField('Endereço')
     cnpj = models.CharField('CNPJ', max_length=18)
     quantidade_blocos = models.IntegerField('Quantidade de blocos')
+
+    class Meta:
+        verbose_name = 'Condominio'
+        verbose_name_plural = 'Condominios'
+        ordering = ['id']
+
+    def __str__(self):
+        return self.nome
