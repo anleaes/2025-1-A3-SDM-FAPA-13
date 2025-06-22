@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'condominio.apps.CondominioConfig'
+    'condominio.apps.CondominioConfig',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
