@@ -7,3 +7,6 @@ condominiosapp/__pycache__/*
 
 /apps/blocos/__pycache__/*
 /apps/blocos/migrations/*
+
+/apps/apartamentos/__pycache__/*
+/apps/apartamentos/migrations/*
