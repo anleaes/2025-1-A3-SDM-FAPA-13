@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'condominio.apps.CondominioConfig',
     'blocos.apps.BlocosConfig',
+    'apartamentos.apps.ApartamentosConfig',
     'django_filters',
     'rest_framework.authtoken',
 ]
