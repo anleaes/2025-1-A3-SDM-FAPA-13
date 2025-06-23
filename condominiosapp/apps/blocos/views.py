@@ -17,3 +17,4 @@ class BlocoViewSet(viewsets.ModelViewSet):
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['nome', 'numero', 'qtd_apartamentos', 'condominio']
     authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
