@@ -21,5 +21,6 @@ from rest_framework.authtoken.views import obtain_auth_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('condominio/', include('condominio.urls', namespace='condominio')),
+    path('blocos/', include('blocos.urls', namespace='blocos')),
     path('token-autenticacao/', obtain_auth_token)
 ]
