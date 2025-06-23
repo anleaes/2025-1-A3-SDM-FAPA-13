@@ -6,6 +6,9 @@ from .serializer import BlocoSerializer
 # Filter
 from django_filters.rest_framework import DjangoFilterBackend
 
+# Token
+from rest_framework.authentication import TokenAuthentication
+
 
 class BlocoViewSet(viewsets.ModelViewSet):
     queryset = Bloco.objects.all()
