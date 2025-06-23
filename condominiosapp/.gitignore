@@ -1,5 +1,9 @@
 .env
 
 condominiosapp/__pycache__/*
+
 /apps/condominio/__pycache__/*
 /apps/condominio/migrations/*
+
+/apps/blocos/__pycache__/*
+/apps/blocos/migrations/*
