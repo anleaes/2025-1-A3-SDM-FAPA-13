@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'condominio.apps.CondominioConfig',
-    'products.apps.ProductsConfig',
+    'blocos.apps.BlocosConfig',
     'django_filters',
     'rest_framework.authtoken',
 ]
