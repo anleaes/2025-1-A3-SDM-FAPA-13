@@ -15,3 +15,4 @@ class BlocoViewSet(viewsets.ModelViewSet):
     serializer_class = BlocoSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['nome', 'numero', 'qtd_apartamentos', 'condominio']
+    authentication_classes = [TokenAuthentication]
