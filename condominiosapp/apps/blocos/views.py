@@ -8,6 +8,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 # Token
 from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 
 
 class BlocoViewSet(viewsets.ModelViewSet):
