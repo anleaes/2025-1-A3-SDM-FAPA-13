@@ -15,3 +15,5 @@ class FuncionarioViewSet(viewsets.ModelViewSet):
     serializer_class = FuncionarioSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['nome', 'funcao', 'turno', 'condominio']
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
