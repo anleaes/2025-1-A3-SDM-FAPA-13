@@ -3,7 +3,9 @@ from condominio.models import Condominio
 
 class AreaComum(models.Model):
     nome = models.CharField(max_length=100)
-    descricao = models.TextField()
+    capacidade = models.IntegerField()
+    horario_abertura = models.TimeField()
+    horario_fechamento = models.TimeField()
     condominio = models.ForeignKey(Condominio, on_delete=models.CASCADE, related_name='areascomuns')
 
     class Meta:
