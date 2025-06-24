@@ -10,3 +10,6 @@ condominiosapp/__pycache__/*
 
 /apps/apartamentos/__pycache__/*
 /apps/apartamentos/migrations/*
+
+/apps/moradores/__pycache__/*
+/apps/moradores/migrations/*
