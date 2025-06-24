@@ -2,8 +2,10 @@ from .models import AreaComum
 from rest_framework import viewsets
 from .serializer import AreaComumSerializer
 
-# Create your views here.
+# Filter
+from django_filters.rest_framework import DjangoFilterBackend
 
 class AreaComumViewSet(viewsets.ModelViewSet):
     queryset = AreaComum.objects.all()
     serializer_class = AreaComumSerializer
+    
