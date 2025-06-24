@@ -8,5 +8,10 @@ class Morador(models.Model):
     email = models.EmailField(unique=True)
     apartamento = models.ForeignKey(Apartamento, on_delete=models.CASCADE, related_name='moradores')
 
+    class Meta:
+        verbose_name = 'Morador'
+        verbose_name_plural = 'Moradores'
+        ordering = ['id']
+
     def __str__(self):
         return f"{self.nome} - Apartamento {self.apartamento.numero}"
