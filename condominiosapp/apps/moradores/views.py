@@ -5,6 +5,10 @@ from .serializer import MoradorSerializer
 # Filter
 from django_filters.rest_framework import DjangoFilterBackend
 
+# Token
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+
 
 class MoradorViewSet(viewsets.ModelViewSet):
     queryset = Morador.objects.all()
