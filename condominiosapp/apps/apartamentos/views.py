@@ -15,3 +15,5 @@ class ApartamentoViewSet(viewsets.ModelViewSet):
     serializer_class = ApartamentoSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['numero', 'andar', 'bloco']
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
