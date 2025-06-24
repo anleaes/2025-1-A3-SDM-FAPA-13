@@ -3,4 +3,5 @@ from rest_framework import viewsets
 from .serializer import FuncionarioSerializer
 
 class FuncionarioViewSet(viewsets.ModelViewSet):
-    pass
+    queryset = Funcionario.objects.all()
+    serializer_class = FuncionarioSerializer
