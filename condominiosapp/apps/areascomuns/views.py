@@ -5,4 +5,5 @@ from .serializer import AreaComumSerializer
 # Create your views here.
 
 class AreaComumViewSet(viewsets.ModelViewSet):
-    pass
+    queryset = AreaComum.objects.all()
+    serializer_class = AreaComumSerializer
