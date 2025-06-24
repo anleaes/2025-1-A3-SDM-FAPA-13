@@ -8,5 +8,10 @@ class Funcionario(models.Model):
     turno = models.CharField(max_length=20)
     condominio = models.ForeignKey(Condominio, on_delete=models.CASCADE, related_name='funcionarios')
 
+    class Meta:
+        verbose_name = 'Funcionário'
+        verbose_name_plural = 'Funcionários'
+        ordering = ['id']
+
     def __str__(self):
         return f"{self.nome} - {self.funcao} - {self.condominio.nome}"
