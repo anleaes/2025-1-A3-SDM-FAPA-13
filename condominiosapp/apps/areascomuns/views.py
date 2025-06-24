@@ -8,4 +8,5 @@ from django_filters.rest_framework import DjangoFilterBackend
 class AreaComumViewSet(viewsets.ModelViewSet):
     queryset = AreaComum.objects.all()
     serializer_class = AreaComumSerializer
-    
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['nome', 'capacidade', 'condominio']
