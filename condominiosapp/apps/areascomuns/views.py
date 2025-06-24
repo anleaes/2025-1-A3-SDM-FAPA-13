@@ -15,3 +15,5 @@ class AreaComumViewSet(viewsets.ModelViewSet):
     serializer_class = AreaComumSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['nome', 'capacidade', 'condominio']
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
