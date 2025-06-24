@@ -4,4 +4,5 @@ from .serializers import MoradorSerializer
 
 
 class MoradorViewSet(viewsets.ModelViewSet):
-    pass
+    queryset = Morador.objects.all()
+    serializer_class = MoradorSerializer
