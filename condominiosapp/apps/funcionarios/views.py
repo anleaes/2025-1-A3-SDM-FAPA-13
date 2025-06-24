@@ -9,3 +9,5 @@ from django_filters.rest_framework import DjangoFilterBackend
 class FuncionarioViewSet(viewsets.ModelViewSet):
     queryset = Funcionario.objects.all()
     serializer_class = FuncionarioSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ['nome', 'funcao', 'turno', 'condominio']
