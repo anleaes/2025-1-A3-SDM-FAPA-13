@@ -6,5 +6,10 @@ class AreaComum(models.Model):
     descricao = models.TextField()
     condominio = models.ForeignKey(Condominio, on_delete=models.CASCADE, related_name='areascomuns')
 
+    class Meta:
+        verbose_name = 'Área Comum'
+        verbose_name_plural = 'Áreas Comuns'
+        ordering = ['id']
+
     def __str__(self):
         return f"{self.nome} - {self.condominio.nome}"
