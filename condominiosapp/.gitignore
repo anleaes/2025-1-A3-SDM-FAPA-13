@@ -13,3 +13,6 @@ condominiosapp/__pycache__/*
 
 /apps/moradores/__pycache__/*
 /apps/moradores/migrations/*
+
+/apps/funcionarios/__pycache__/*
+/apps/funcionarios/migrations/*
