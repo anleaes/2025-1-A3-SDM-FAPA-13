@@ -16,3 +16,6 @@ condominiosapp/__pycache__/*
 
 /apps/funcionarios/__pycache__/*
 /apps/funcionarios/migrations/*
+
+/apps/areascomuns/__pycache__/*
+/apps/areascomuns/migrations/*

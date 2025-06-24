@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'apartamentos.apps.ApartamentosConfig',
     'moradores.apps.MoradoresConfig',
     'funcionarios.apps.FuncionariosConfig',
+    'areascomuns.apps.AreascomunsConfig',
     'django_filters',
     'rest_framework.authtoken',
 ]
