@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from .models import Morador
+from rest_framework import viewsets
+from .serializers import MoradorSerializer
 
-# Create your views here.
+
+class MoradorViewSet(viewsets.ModelViewSet):
+    queryset = Morador.objects.all()
+    serializer_class = MoradorSerializer
