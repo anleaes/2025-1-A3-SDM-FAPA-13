@@ -15,3 +15,5 @@ class MoradorViewSet(viewsets.ModelViewSet):
     serializer_class = MoradorSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['nome', 'cpf', 'apartamento']
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
