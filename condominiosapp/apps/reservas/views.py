@@ -4,4 +4,5 @@ from .serializer import ReservaAreaComumSerializer
 
 
 class ReservaAreaComumViewSet(viewsets.ModelViewSet):
-    pass
+    queryset = ReservaAreaComum.objects.all()
+    serializer_class = ReservaAreaComumSerializer
