@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from .models import Manutencao
+from rest_framework import viewsets
+from .serializers import ManutencaoSerializer
 
-# Create your views here.
+class ManutencaoViewSet(viewsets.ModelViewSet):
+    queryset = Manutencao.objects.all()
+    serializer_class = ManutencaoSerializer
