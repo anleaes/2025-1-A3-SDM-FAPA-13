@@ -25,3 +25,6 @@ condominiosapp/__pycache__/*
 
 /apps/eventos/__pycache__/*
 /apps/eventos/migrations/*
+
+/apps/manutencoes/__pycache__/*
+/apps/manutencoes/migrations/*
