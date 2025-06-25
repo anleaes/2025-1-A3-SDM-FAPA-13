@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'moradores.apps.MoradoresConfig',
     'funcionarios.apps.FuncionariosConfig',
     'areascomuns.apps.AreascomunsConfig',
+    'reservas.apps.ReservasConfig',
     'django_filters',
     'rest_framework.authtoken',
 ]
