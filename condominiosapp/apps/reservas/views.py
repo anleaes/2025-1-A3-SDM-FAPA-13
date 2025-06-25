@@ -14,4 +14,5 @@ class ReservaAreaComumViewSet(viewsets.ModelViewSet):
     serializer_class = ReservaAreaComumSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['data_reserva', 'status', 'morador', 'area_comum']
-    
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
