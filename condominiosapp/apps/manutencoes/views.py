@@ -5,6 +5,10 @@ from .serializer import ManutencaoSerializer
 # Filter
 from django_filters.rest_framework import DjangoFilterBackend
 
+# Token
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+
 class ManutencaoViewSet(viewsets.ModelViewSet):
     queryset = Manutencao.objects.all()
     serializer_class = ManutencaoSerializer
