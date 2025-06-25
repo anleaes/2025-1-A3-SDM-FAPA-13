@@ -3,4 +3,5 @@ from rest_framework import viewsets
 from .serializers import ManutencaoSerializer
 
 class ManutencaoViewSet(viewsets.ModelViewSet):
-    pass
+    queryset = Manutencao.objects.all()
+    serializer_class = ManutencaoSerializer
