@@ -27,5 +27,6 @@ urlpatterns = [
     path('funcionarios/', include('funcionarios.urls', namespace='funcionarios')),
     path('areascomuns/', include('areascomuns.urls', namespace='areascomuns')),
     path('reservas/', include('reservas.urls', namespace='reservas')),
+    path('eventos/', include('eventos.urls', namespace='eventos')),
     path('token-autenticacao/', obtain_auth_token)
 ]
