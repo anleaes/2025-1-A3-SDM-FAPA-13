@@ -19,3 +19,6 @@ condominiosapp/__pycache__/*
 
 /apps/areascomuns/__pycache__/*
 /apps/areascomuns/migrations/*
+
+/apps/reservas/__pycache__/*
+/apps/reservas/migrations/*
