@@ -4,4 +4,5 @@ from .serializer import EventoSerializer
 
 
 class EventoViewSet(viewsets.ModelViewSet):
-    pass
+    queryset = Evento.objects.all()
+    serializer_class = EventoSerializer
