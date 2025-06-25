@@ -15,3 +15,5 @@ class EventoViewSet(viewsets.ModelViewSet):
     serializer_class = EventoSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['nome', 'local', 'data', 'morador']
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
