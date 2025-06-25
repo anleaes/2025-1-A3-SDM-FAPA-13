@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'funcionarios.apps.FuncionariosConfig',
     'areascomuns.apps.AreascomunsConfig',
     'reservas.apps.ReservasConfig',
+    'eventos.apps.EventosConfig',
     'django_filters',
     'rest_framework.authtoken',
 ]
