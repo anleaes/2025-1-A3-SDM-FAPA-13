@@ -14,3 +14,5 @@ class ManutencaoViewSet(viewsets.ModelViewSet):
     serializer_class = ManutencaoSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['descricao', 'data', 'status', 'condominio']
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
